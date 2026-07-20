@@ -49,4 +49,6 @@ git checkout main
 git merge mdparser
 ```
 
+start to write server route: GET /post?slug=helloworld, GET /posts
+
 
