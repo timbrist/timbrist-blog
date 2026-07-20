@@ -46,4 +46,15 @@ test("we visit GET /posts ", async () => {
     console.log("data:", data);
 });
 
+test("we visit GET / ", async () => {
+    const uri = '/';
+    const url = `http://localhost:5090${uri}`;
+    console.log("visit: ", url);
+    const response = await fetch(url);
+
+    assert.equal(response.status, 200);
+    console.log("status:", response.status);
+
+});
+
 //node --test tests/get.route.test.js
