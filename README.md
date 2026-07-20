@@ -22,3 +22,8 @@ git checkout -b mdparser
 npm init .
 npm install remark remark-html gray-matter
 ```
+
+we write a markdown.js to parse Markdown string → HTML string.
+Given md = `# Hello This is **important**.`
+when call markdownToHtml
+Then  html
