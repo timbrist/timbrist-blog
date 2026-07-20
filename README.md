@@ -27,3 +27,18 @@ we write a markdown.js to parse Markdown string → HTML string.
 Given md = `# Hello This is **important**.`
 when call markdownToHtml
 Then  html
+
+
+Continue, we need 2 funtions
+1. getPostBySlug
+Given a file name(slug) = '_posts/hello.md'
+When call getPostBySlug
+Then get the meta data and html from the markdown file
+
+2. getAllPosts 
+Given a file path = '_posts'
+When call getAllPosts
+Then get all the metadata from files that end with .md
+
+
+

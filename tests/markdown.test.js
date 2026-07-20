@@ -12,5 +12,3 @@ This is **important**.`;
     const expected = '<h1>Hello</h1>\n<p>This is <strong>important</strong>.</p>\n';
     assert.deepEqual(htmlstring, expected);
 });
-
-//node --test tests/get.route.test.js
