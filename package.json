@@ -1,0 +1,29 @@
+{
+  "name": "timbrist-blog",
+  "version": "1.0.0",
+  "description": "Let's build a blog from scratch, see how much it will evolve.",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timbrist/timbrist-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timbrist/timbrist-blog/issues"
+  },
+  "homepage": "https://github.com/timbrist/timbrist-blog#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
+  }
+}

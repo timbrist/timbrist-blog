@@ -11,3 +11,14 @@ Given uri='/echo?message=hello'
 When visit`http://localhost:5090${uri}`
 GET { message: 'hello' }
 
+Now with the web server is running, I'm imaging that the blog can looks like (next-js-blog-stater)["https://next-blog-starter.vercel.app/"], here is their (example codes)["https://github.com/vercel/next.js/tree/canary/examples/blog-starter"]. 
+
+Let's install some packages to handle .md files . I have no choice, if you want to write the markdown parser to html, it will take a long time to drift away from our main goal.
+
+```bash
+#create new branch to deal with markdown parser
+git checkout -b mdparser
+#start using package management 
+npm init .
+npm install remark remark-html gray-matter
+```
