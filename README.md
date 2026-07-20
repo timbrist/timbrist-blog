@@ -41,4 +41,12 @@ When call getAllPosts
 Then get all the metadata from files that end with .md
 
 
+I'm now merge  branch mdparser into main
+```bash
+git add README.md
+git commit -m "update README with merge information "
+git checkout main
+git merge mdparser
+```
+
 
