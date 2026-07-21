@@ -62,3 +62,12 @@ I will deal with the ui tomorrow on Jul 21,
 ```bash
 git checkout -b ui
 ```
+
+Jul 21, after finished the ui, right now i can't decide whether should I refactor, add contraints, or should I move on to add more features ?  But right now we have finished the basic functionalities that (next-js-blog-stater)["https://next-blog-starter.vercel.app/"] would have with only less than 10k of code.
+
+1. refactor: I would abstract the route from the server.js 
+2. contraints: think about contraints make the app more solid.
+3. more features : I would like to have a admin -> upload zip that export from notion -> render the markdown that I write from notion . 
+4. deploy: only after deploy a circle can be completed .
+
+I decide to deploy it first.
