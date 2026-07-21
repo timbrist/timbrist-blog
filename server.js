@@ -76,6 +76,7 @@ const server = http.createServer(async (req, res)=>{
             res.statusCode = 200;
             res.setHeader("Content-Type", "text/plain; charset=utf-8");
             res.end(response);
+            return;
         }catch(error){
             res.statusCode = 400;
             res.setHeader("Content-Type", "text/plain; charset=utf-8");
@@ -96,9 +97,8 @@ const server = http.createServer(async (req, res)=>{
             const mimeType =
                 MIME_TYPES[file.ext] ?? MIME_TYPES.default;
 
-            res.writeHead(statusCode, {
-                "Content-Type": mimeType,
-            });
+            res.statusCode = 200;
+            res.setHeader("Content-Type", mimeType,);
 
             if (req.method === "HEAD") {
                 res.end();
