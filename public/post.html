@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Timbrist Blog</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <a href="/">Home</a>
+  </header>
+
+  <main>
+    <p id="loading">正在加载文章……</p>
+
+    <p id="error" hidden></p>
+
+    <article id="post" hidden>
+      <h1 id="post-title"></h1>
+
+      <time id="post-date"></time>
+
+      <p id="post-excerpt"></p>
+
+      <div id="post-content"></div>
+    </article>
+  </main>
+
+  <script src="/js/post.js"></script>
+</body>
+</html>
