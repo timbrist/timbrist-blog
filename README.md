@@ -70,4 +70,8 @@ Jul 21, after finished the ui, right now i can't decide whether should I refacto
 3. more features : I would like to have a admin -> upload zip that export from notion -> render the markdown that I write from notion . 
 4. deploy: only after deploy a circle can be completed .
 
-I decide to deploy it first.
+I decide to refactor it first and then deploy.
+
+```bash
+git checkout -b refactor
+```

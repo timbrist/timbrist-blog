@@ -4,7 +4,7 @@
   "description": "Let's build a blog from scratch, see how much it will evolve.",
   "main": "server.js",
   "directories": {
-    "test": "tests"
+    "test": "node --test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
