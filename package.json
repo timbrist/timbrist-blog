@@ -2,13 +2,13 @@
   "name": "timbrist-blog",
   "version": "1.0.0",
   "description": "Let's build a blog from scratch, see how much it will evolve.",
-  "main": "server.js",
+  "main": "blog.server.js",
   "directories": {
-    "test": "node --test"
+    "test": "node"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node --test",
+    "start": "node blog.server.js"
   },
   "repository": {
     "type": "git",

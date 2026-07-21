@@ -81,5 +81,6 @@ async function serveStatic(req, res, url) {
 
 
 module.exports={
+    prepareFile,//test
     serveStatic
 }

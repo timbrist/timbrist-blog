@@ -75,3 +75,47 @@ I decide to refactor it first and then deploy.
 ```bash
 git checkout -b refactor
 ```
+
+mock the expressjs, now we need to deploy 
+```bash
+npm ci
+npm tests
+NODE_ENV=production PORT=5090 npm start
+```
+
+then add the nginx file 
+
+###Run Node with systemd
+
+```bash
+
+ExecStart = which node
+User = whoami
+sudo vim /etc/systemd/system/timbrist-blog.service
+
+[Unit]
+Description=Timbrist Blog
+After=network.target
+
+[Service]
+Type=simple
+User=timbrist
+WorkingDirectory=/srv/timbrist-blog
+Environment=NODE_ENV=production
+Environment=PORT=5090
+Environment=HOST=127.0.0.1
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now timbrist-blog
+sudo systemctl status timbrist-blog
+
+sudo journalctl -u timbrist-blog -f
+```

@@ -55,6 +55,10 @@ function createApp() {
       if (staticHandled) { return; }
 
       // If no static file exists, return 404.
+      return res.status(404).json({
+        error: "NOT_FOUND",
+        message: "Route not found",
+      });
     } catch (error) {
       console.error(error);
 
